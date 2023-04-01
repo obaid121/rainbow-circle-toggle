@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>
+  Welcome to {{ title }}!
+</h1>
+<ng-container *ngFor="let index of arr">
+  <div
+    class="circle + index"
+    [ngStyle]="{'background-color': selected[index], 'border-color': selected[index]}"
+    (click)="clickCircle(index)"
+  ></div>
+</ng-container>
